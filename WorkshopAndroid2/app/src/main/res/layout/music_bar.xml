@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="20dp"
-    android:background="@color/colorAccent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey"
+    android:orientation="vertical"
     tools:showIn="@layout/content_main">
 
-
-    <ImageView
-        android:layout_width="7dp"
-        android:layout_height="match_parent"
-        android:background="@drawable/music_dot"
-        android:layout_marginLeft="20dp"
-        />
-
-
-</LinearLayout>
+    <include layout="@layout/music_progress_dot"></include>
+</FrameLayout>
